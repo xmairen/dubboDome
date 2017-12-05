@@ -5,7 +5,7 @@
     <parent>
         <artifactId>dubboDome</artifactId>
         <groupId>com.yida</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>myConsumer</artifactId>
@@ -16,4 +16,30 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>consumer.xml</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+        
+		    <plugins>
+				<plugin>  
+				    <groupId>org.apache.maven.plugins</groupId>  
+				    <artifactId>maven-compiler-plugin</artifactId>  
+				    <version>3.1</version>  
+				    <configuration>  
+				        <verbose>true</verbose>  
+				        <fork>true</fork>  
+				        <executable>${JAVA8_HOME}/bin/javac</executable>  
+				    </configuration>  
+				</plugin> 
+		    </plugins>
+		    <defaultGoal>compile</defaultGoal>
+    </build>
+    
 </project>

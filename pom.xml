@@ -69,6 +69,7 @@
 				    </configuration>  
 				</plugin> 
 		    </plugins>
+		    <defaultGoal>compile</defaultGoal>
     </build> 
   <!-- 创建子项目后自动会加载。刚开始是没有的 -->
     <modules>
