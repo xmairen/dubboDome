@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="myConsumer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/myConsumer_jar</output-path>
+    <root id="archive" name="myConsumer.jar">
+      <element id="module-output" name="myConsumer" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/myConsumer/lib/jorphan.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/myConsumer/lib/ApacheJMeter_core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/myConsumer/lib/ApacheJMeter_java.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

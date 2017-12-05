@@ -1,0 +1,3 @@
+org\myProvider\App.class
+com\provider\impl\ProviderServer.class
+com\provider\impl\HelloServiceImpl.class
